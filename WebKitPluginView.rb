@@ -3,8 +3,15 @@ class WebKitPluginView
   def initWithArguments(attributes)
     if initWithFrame(NSZeroRect)
       puts "Initialized with attributes: #{attributes.description}"
+      self.target = self
+      self.action = "evalRubyCode:"
       self
     end
+  end
+
+  # sender is actually self in this case...
+  def evalRubyCode(sender)
+    eval sender.stringValue
   end
 
   # WebPlugIn informal protocol

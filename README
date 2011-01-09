@@ -1,3 +1,5 @@
+A WebKit plug-in implemented in MacRuby. The plug-in’s view is a NSTextField subclass, text entered in the textfield is eval'ed as Ruby code.
+
 See the following links for information:
 
 * http://developer.apple.com/library/mac/#documentation/InternetWeb/Conceptual/WebKit_PluginProgTopic/Tasks/WebKitPlugins.html%23//apple_ref/doc/uid/30001249-BAJGJJAH
@@ -5,3 +7,5 @@ See the following links for information:
 * http://developer.apple.com/library/mac/#samplecode/WebKitPluginStarter/Listings/ReadMe_txt.html
 
 * http://developer.apple.com/library/mac/#qa/qa2006/qa1500.html
+
+* API: http://developer.apple.com/library/mac/#documentation/Cocoa/Reference/WebKit/Protocols/WebPlugIn_Protocol/Reference/Reference.html%23//apple_ref/occ/cat/WebPlugIn
