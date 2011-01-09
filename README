@@ -2,6 +2,8 @@ A WebKit plug-in implemented in MacRuby. The plug-in’s view is a NSTextField s
 
 See the following links for information:
 
+* The plug-in in action: http://cl.ly/012g3M3B0B3t0h2c423t
+
 * http://developer.apple.com/library/mac/#documentation/InternetWeb/Conceptual/WebKit_PluginProgTopic/Tasks/WebKitPlugins.html%23//apple_ref/doc/uid/30001249-BAJGJJAH
 
 * http://developer.apple.com/library/mac/#samplecode/WebKitPluginStarter/Listings/ReadMe_txt.html
