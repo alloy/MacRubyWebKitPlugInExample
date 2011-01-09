@@ -15,6 +15,16 @@
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		51B7FA1712DA5145000BA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090 /* TestBrowser.app */;
+			remoteInfo = TestBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0259C576FE90428111CA0C5A /* WebKitPluginView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = WebKitPluginView.m; sourceTree = "<group>"; };
 		0259C57AFE90428111CA0C5A /* WebKitPluginView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WebKitPluginView.h; sourceTree = "<group>"; };
@@ -22,6 +32,8 @@
 		32DBCF980370C29C00C91783 /* WebKitPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitPlugin_Prefix.pch; sourceTree = "<group>"; };
 		51B7F98E12DA2C91000BA203 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
 		51B7F99112DA3055000BA203 /* WebKitPluginView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = WebKitPluginView.rb; sourceTree = "<group>"; };
+		51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestBrowser.xcodeproj; path = TestBrowser/TestBrowser.xcodeproj; sourceTree = "<group>"; };
+		51B7FA9512DA567E000BA203 /* TestBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBrowser-Info.plist"; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* WebKitPlugin.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKitPlugin.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -45,11 +57,13 @@
 		0259C574FE90428111CA0C5A /* WebKitPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
+				51B7FA9512DA567E000BA203 /* TestBrowser-Info.plist */,
 			);
 			name = WebKitPlugin;
 			sourceTree = "<group>";
@@ -99,6 +113,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		51B7FA1112DA5145000BA203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51B7FA1812DA5145000BA203 /* TestBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,12 +160,28 @@
 			);
 			mainGroup = 0259C574FE90428111CA0C5A /* WebKitPlugin */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 51B7FA1112DA5145000BA203 /* Products */;
+					ProjectRef = 51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1AC9600486D14A00FE50C9 /* WebKitPlugin */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		51B7FA1812DA5145000BA203 /* TestBrowser.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestBrowser.app;
+			remoteRef = 51B7FA1712DA5145000BA203 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1AC9660486D14A00FE50C9 /* Resources */ = {
@@ -235,7 +273,7 @@
 		C027D11E08A954E7001699E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -249,7 +287,7 @@
 		C027D11F08A954E7001699E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

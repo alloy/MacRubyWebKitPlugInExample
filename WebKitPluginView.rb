@@ -1,7 +1,7 @@
-# Superclass is already defined in WebKitPluginView.h
+# Superclass NSTextField is already defined in WebKitPluginView.h
 class WebKitPluginView
   def initWithArguments(dictionary)
-    if init
+    if initWithFrame(NSZeroRect)
       p dictionary
       self
     end

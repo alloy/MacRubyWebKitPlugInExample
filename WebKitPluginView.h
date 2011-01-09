@@ -1,6 +1,6 @@
 #import <Cocoa/Cocoa.h>
 
-@interface WebKitPluginView : NSMovieView <WebPlugInViewFactory>
+@interface WebKitPluginView : NSTextField <WebPlugInViewFactory>
 {
 }
 

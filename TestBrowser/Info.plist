@@ -9,36 +9,20 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.${PRODUCT_NAME:identifier}</string>
+	<string>com.yourcompany.TestBrowser</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>WBPL</string>
+	<string>APPL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
-	<string>WebKitPluginView</string>
-	<key>WebPluginName</key>
-	<string>Sample WebKit Safari Plug-In</string>
-	<key>WebPluginDescription</key>
-	<string>A simple web kit plug-in example.</string>
-	<key>WebPluginMIMETypes</key>
-	<dict>
-		<key>application/x-simplewebkitplugin</key>
-		<dict>
-			<key>WebPluginExtensions</key>
-			<array>
-				<string>swkp</string>
-			</array>
-			<key>WebPluginTypeDescription</key>
-			<string>Simple Web Kit Plug-In Data</string>
-		</dict>
-	</dict>
+	<string>NSApplication</string>
 </dict>
 </plist>
