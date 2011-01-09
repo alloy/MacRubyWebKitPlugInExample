@@ -3,8 +3,14 @@ class WebKitPluginView
   def initWithArguments(attributes)
     if initWithFrame(NSZeroRect)
       puts "Initialized with attributes: #{attributes.description}"
+
+      # This is how you access the enclosing WebView instance
+      @webView = attributes[WebPlugInContainerKey].webFrame.webView
+
+      # This makes the textfield call evalRubyCode when the user hits enter in the textfield
       self.target = self
       self.action = "evalRubyCode:"
+
       self
     end
   end
@@ -12,6 +18,11 @@ class WebKitPluginView
   # sender is actually self in this case...
   def evalRubyCode(sender)
     eval sender.stringValue
+
+    # Notify the WebView's UIDelegate, normally you'd have to check if the UIDelegate actually
+    # responds to the message, but in this case it is known that the TestBrowser's AppController
+    # instance does in fact do so
+    @webView.UIDelegate.webView(@webView, textField: self, didReceiveText: self.stringValue)
   end
 
   # WebPlugIn informal protocol
