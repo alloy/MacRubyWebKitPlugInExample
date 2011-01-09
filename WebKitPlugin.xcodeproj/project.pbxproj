@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224339570A6F05F3000348D4 /* WebKit.framework */; };
+		51B7F98F12DA2C91000BA203 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B7F98E12DA2C91000BA203 /* MacRuby.framework */; };
+		51B7F99212DA3055000BA203 /* WebKitPluginView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 51B7F99112DA3055000BA203 /* WebKitPluginView.rb */; };
 		8D1AC96B0486D14A00FE50C9 /* WebKitPluginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0259C576FE90428111CA0C5A /* WebKitPluginView.m */; settings = {ATTRIBUTES = (); }; };
 		8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD92D38A0106425D02CA0E72 /* Cocoa.framework */; };
 		8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */; };
@@ -18,6 +20,8 @@
 		0259C57AFE90428111CA0C5A /* WebKitPluginView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WebKitPluginView.h; sourceTree = "<group>"; };
 		224339570A6F05F3000348D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* WebKitPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitPlugin_Prefix.pch; sourceTree = "<group>"; };
+		51B7F98E12DA2C91000BA203 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		51B7F99112DA3055000BA203 /* WebKitPluginView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = WebKitPluginView.rb; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* WebKitPlugin.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKitPlugin.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			files = (
 				8D1AC9700486D14A00FE50C9 /* Cocoa.framework in Frameworks */,
 				224339580A6F05F3000348D4 /* WebKit.framework in Frameworks */,
+				51B7F98F12DA2C91000BA203 /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,7 @@
 			children = (
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 				224339570A6F05F3000348D4 /* WebKit.framework */,
+				51B7F98E12DA2C91000BA203 /* MacRuby.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,6 +86,7 @@
 			children = (
 				0259C57AFE90428111CA0C5A /* WebKitPluginView.h */,
 				0259C576FE90428111CA0C5A /* WebKitPluginView.m */,
+				51B7F99112DA3055000BA203 /* WebKitPluginView.rb */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D1AC9800486D23B00FE50C9 /* InfoPlist.strings in Resources */,
+				51B7F99212DA3055000BA203 /* WebKitPluginView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
