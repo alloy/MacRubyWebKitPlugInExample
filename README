@@ -1,4 +1,5 @@
 A WebKit plug-in implemented in MacRuby. The plug-in’s view is a NSTextField subclass, text entered in the textfield is eval'ed as Ruby code.
+The sample also illustrates how to use the WebView's UIDelegate to call back to the application.
 
 See the following links for information:
 
