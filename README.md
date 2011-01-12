@@ -6,7 +6,13 @@ subclass, text entered in the textfield is eval'ed as Ruby code. The sample
 also illustrates how to use the WebView's UIDelegate to call back to the
 application.
 
-The plug-in in action: http://cl.ly/012g3M3B0B3t0h2c423t
+The custom view from the plugin is loaded in test.html with the following tag:
+
+  <embed name="samplePlugin" type="application/x-simplewebkitplugin"></embed>
+
+The MIME-type is defined by the plugin itself, see the plugin’s `Info.plist`.
+
+The plug-in in action: http://cl.ly/3D3V2Q430V0r0M0B062z
 
 
 Purpose of this example
