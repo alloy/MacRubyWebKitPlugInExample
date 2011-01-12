@@ -61,7 +61,7 @@
 	[webView setPreferences:webPrefs];
 	[webPrefs release];		
 	NSString *currVersionNumber = [[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"];
-	NSLog(@"DEBUG - versionnumber: %@", currVersionNumber);
+	// NSLog(@"DEBUG - versionnumber: %@", currVersionNumber);
 	NSString *UserAgentString = [NSString stringWithFormat:@"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/526+ (KHTML, like Gecko) Version/3.1 Safari/525.12.", currVersionNumber];
 	[webView setCustomUserAgent:UserAgentString];	
 	[webView setUIDelegate:self];
