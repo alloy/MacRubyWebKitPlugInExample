@@ -11,6 +11,6 @@ class AppController < NSObject
   end
 
   def webView(webView, textField: textField, didReceiveText: text)
-    puts "[!] The TestBrowser's AppController instance got notified that the user entered the following text: #{text}"
+    puts "[!] WebViewBasedApp's AppController instance got notified that the user entered the following text: #{text}"
   end
 end

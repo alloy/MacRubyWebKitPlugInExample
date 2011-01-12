@@ -16,19 +16,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		51B7FA1712DA5145000BA203 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1107320486CEB800E47090 /* TestBrowser.app */;
-			remoteInfo = TestBrowser;
-		};
 		51B7FB2B12DE3F3C000BA203 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8D1107320486CEB800E47090 /* Webchen.app */;
 			remoteInfo = Webchen;
+		};
+		51B7FB5E12DE438F000BA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B7FB5412DE438F000BA203 /* WebViewBasedApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090 /* WebViewBasedApp.app */;
+			remoteInfo = WebViewBasedApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,9 +39,8 @@
 		32DBCF980370C29C00C91783 /* WebKitPlugin_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitPlugin_Prefix.pch; sourceTree = "<group>"; };
 		51B7F98E12DA2C91000BA203 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
 		51B7F99112DA3055000BA203 /* WebKitPluginView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = WebKitPluginView.rb; sourceTree = "<group>"; };
-		51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestBrowser.xcodeproj; path = TestBrowser/TestBrowser.xcodeproj; sourceTree = "<group>"; };
-		51B7FA9512DA567E000BA203 /* TestBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBrowser-Info.plist"; sourceTree = "<group>"; };
 		51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Webchen.xcodeproj; path = Webchen/Webchen.xcodeproj; sourceTree = "<group>"; };
+		51B7FB5412DE438F000BA203 /* WebViewBasedApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WebViewBasedApp.xcodeproj; path = WebViewBasedApp/WebViewBasedApp.xcodeproj; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* WebKitPlugin.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKitPlugin.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -65,14 +64,13 @@
 		0259C574FE90428111CA0C5A /* WebKitPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				51B7FB5412DE438F000BA203 /* WebViewBasedApp.xcodeproj */,
 				51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */,
-				51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
 				0259C582FE90428111CA0C5A /* Resources */,
 				1ED78706FE9D4A0611CA0C5A /* Products */,
 				2E58F364FFB232C311CA0CBA /* Frameworks */,
-				51B7FA9512DA567E000BA203 /* TestBrowser-Info.plist */,
 			);
 			name = WebKitPlugin;
 			sourceTree = "<group>";
@@ -122,18 +120,18 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		51B7FA1112DA5145000BA203 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				51B7FA1812DA5145000BA203 /* TestBrowser.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		51B7FB2812DE3F3C000BA203 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				51B7FB2C12DE3F3C000BA203 /* Webchen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51B7FB5512DE438F000BA203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51B7FB5F12DE438F000BA203 /* WebViewBasedApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,12 +177,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 51B7FA1112DA5145000BA203 /* Products */;
-					ProjectRef = 51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */;
-				},
-				{
 					ProductGroup = 51B7FB2812DE3F3C000BA203 /* Products */;
 					ProjectRef = 51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */;
+				},
+				{
+					ProductGroup = 51B7FB5512DE438F000BA203 /* Products */;
+					ProjectRef = 51B7FB5412DE438F000BA203 /* WebViewBasedApp.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -195,18 +193,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		51B7FA1812DA5145000BA203 /* TestBrowser.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TestBrowser.app;
-			remoteRef = 51B7FA1712DA5145000BA203 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		51B7FB2C12DE3F3C000BA203 /* Webchen.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = Webchen.app;
 			remoteRef = 51B7FB2B12DE3F3C000BA203 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		51B7FB5F12DE438F000BA203 /* WebViewBasedApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = WebViewBasedApp.app;
+			remoteRef = 51B7FB5E12DE438F000BA203 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

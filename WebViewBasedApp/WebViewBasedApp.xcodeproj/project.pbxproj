@@ -82,7 +82,7 @@
 		51B7F9FF12DA4FE2000BA203 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		51B7FA0612DA5005000BA203 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = ../test.html; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* TestBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* WebViewBasedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewBasedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107320486CEB800E47090 /* TestBrowser.app */,
+				8D1107320486CEB800E47090 /* WebViewBasedApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D1107260486CEB800E47090 /* TestBrowser */ = {
+		8D1107260486CEB800E47090 /* WebViewBasedApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestBrowser" */;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WebViewBasedApp" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -202,10 +202,10 @@
 			);
 			dependencies = (
 			);
-			name = TestBrowser;
+			name = WebViewBasedApp;
 			productInstallPath = "$(HOME)/Applications";
 			productName = TestBrowser;
-			productReference = 8D1107320486CEB800E47090 /* TestBrowser.app */;
+			productReference = 8D1107320486CEB800E47090 /* WebViewBasedApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestBrowser" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WebViewBasedApp" */;
 			compatibilityVersion = "Xcode 3.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D1107260486CEB800E47090 /* TestBrowser */,
+				8D1107260486CEB800E47090 /* WebViewBasedApp */,
 				172754BD107597F200D0347B /* Unit Tests */,
 				4D1A51A110A4FF5D0046A98A /* Compile */,
 				4D1A51A510A4FF640046A98A /* Embed */,
@@ -401,7 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TestBrowser;
+				PRODUCT_NAME = WebViewBasedApp;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
@@ -419,7 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = TestBrowser;
+				PRODUCT_NAME = WebViewBasedApp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "TestBrowser" */ = {
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "WebViewBasedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4B08A954540054247B /* Debug */,
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TestBrowser" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WebViewBasedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
