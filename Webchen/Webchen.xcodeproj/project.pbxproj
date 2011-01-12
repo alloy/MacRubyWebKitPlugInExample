@@ -11,6 +11,7 @@
 		4C9FCA0F0FC56A25006836E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9FCA0E0FC56A25006836E9 /* WebKit.framework */; };
 		4C9FCA170FC56A90006836E9 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9FCA160FC56A90006836E9 /* WebController.m */; };
 		4C9FCA980FC57C1C006836E9 /* WebchenIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FCA970FC57C1C006836E9 /* WebchenIcon.icns */; };
+		51B7FB3412DE4122000BA203 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 51B7FB3312DE4122000BA203 /* test.html */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -29,6 +30,7 @@
 		4C9FCA150FC56A90006836E9 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
 		4C9FCA160FC56A90006836E9 /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		4C9FCA970FC57C1C006836E9 /* WebchenIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WebchenIcon.icns; sourceTree = "<group>"; };
+		51B7FB3312DE4122000BA203 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = ../test.html; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Webchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Webchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				51B7FB3312DE4122000BA203 /* test.html */,
 				4C9FCA970FC57C1C006836E9 /* WebchenIcon.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -176,6 +179,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				4C9FCA980FC57C1C006836E9 /* WebchenIcon.icns in Resources */,
+				51B7FB3412DE4122000BA203 /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

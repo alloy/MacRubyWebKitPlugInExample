@@ -23,6 +23,13 @@
 			remoteGlobalIDString = 8D1107320486CEB800E47090 /* TestBrowser.app */;
 			remoteInfo = TestBrowser;
 		};
+		51B7FB2B12DE3F3C000BA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090 /* Webchen.app */;
+			remoteInfo = Webchen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,7 @@
 		51B7F99112DA3055000BA203 /* WebKitPluginView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = WebKitPluginView.rb; sourceTree = "<group>"; };
 		51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TestBrowser.xcodeproj; path = TestBrowser/TestBrowser.xcodeproj; sourceTree = "<group>"; };
 		51B7FA9512DA567E000BA203 /* TestBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestBrowser-Info.plist"; sourceTree = "<group>"; };
+		51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Webchen.xcodeproj; path = Webchen/Webchen.xcodeproj; sourceTree = "<group>"; };
 		8D1AC9730486D14A00FE50C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1AC9740486D14A00FE50C9 /* WebKitPlugin.webplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebKitPlugin.webplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1AC97B0486D23100FE50C9 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 		0259C574FE90428111CA0C5A /* WebKitPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */,
 				51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */,
 				32DBCF9E0370C38000C91783 /* Classes */,
 				32DBCF9F0370C38200C91783 /* Other Sources */,
@@ -121,6 +130,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		51B7FB2812DE3F3C000BA203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51B7FB2C12DE3F3C000BA203 /* Webchen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +182,10 @@
 					ProductGroup = 51B7FA1112DA5145000BA203 /* Products */;
 					ProjectRef = 51B7FA1012DA5145000BA203 /* TestBrowser.xcodeproj */;
 				},
+				{
+					ProductGroup = 51B7FB2812DE3F3C000BA203 /* Products */;
+					ProjectRef = 51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -179,6 +200,13 @@
 			fileType = wrapper.application;
 			path = TestBrowser.app;
 			remoteRef = 51B7FA1712DA5145000BA203 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		51B7FB2C12DE3F3C000BA203 /* Webchen.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Webchen.app;
+			remoteRef = 51B7FB2B12DE3F3C000BA203 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -207,7 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"${SRCROOT}/TestBrowser/build/Debug/TestBrowser.app/Contents/PlugIns/${FULL_PRODUCT_NAME}\" > /tmp/xcode-debug.txt\n\n# clean up any previous products/symbolic links in the Internet Plug-Ins folder\nif [ -a \"${SRCROOT}/TestBrowser/build/Debug/TestBrowser.app/Contents/PlugIns/${FULL_PRODUCT_NAME}\" ]; then\n  rm -Rf \"${SRCROOT}/TestBrowser/build/Debug/TestBrowser.app/Contents/PlugIns/${FULL_PRODUCT_NAME}\"\nfi\n\nmkdir -p \"${SRCROOT}/TestBrowser/build/Debug/TestBrowser.app/Contents/PlugIns\"\nln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"${SRCROOT}/TestBrowser/build/Debug/TestBrowser.app/Contents/PlugIns/${FULL_PRODUCT_NAME}\"";
+			shellScript = "# clean up any previous products/symbolic links in the Internet Plug-Ins folder\nif [ -a \"${USER_LIBRARY_DIR}/Internet Plug-Ins/${FULL_PRODUCT_NAME}\" ]; then\n  rm -Rf \"${USER_LIBRARY_DIR}/Internet Plug-Ins/${FULL_PRODUCT_NAME}\"\nfi\n\n# Depending on the build configuration, either copy or link to the most recent product\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  # if we're debugging, add a symbolic link to the plug-in\n  ln -sf \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \\\n    \"${USER_LIBRARY_DIR}/Internet Plug-Ins/${FULL_PRODUCT_NAME}\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  # if we're compiling for release, just copy the plugin to the Internet Plug-ins folder\n  cp -Rfv \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \\\n    \"${USER_LIBRARY_DIR}/Internet Plug-Ins/${FULL_PRODUCT_NAME}\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

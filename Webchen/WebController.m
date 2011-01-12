@@ -70,11 +70,7 @@
 	[webView setFrameLoadDelegate:self];
 	[webView setDownloadDelegate:self];
 	[webView setPolicyDelegate:self];	
-	NSString *urlStringPrefs = [[NSUserDefaults standardUserDefaults] valueForKey: @"urlStringPrefs"];
-	if ([urlStringPrefs length] > 7)
-	{
-		[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStringPrefs]]];
-	}
+  [self loadStartpage:nil];
 }
 
 
@@ -95,8 +91,9 @@
 
 - (IBAction)loadStartpage:(id)sender
 {
-	NSString *urlStringPrefs = [[NSUserDefaults standardUserDefaults] valueForKey: @"urlStringPrefs"];
-	[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStringPrefs]]];
+  //NSURL *url = [NSURL URLWithString:[[NSUserDefaults standardUserDefaults] valueForKey: @"urlStringPrefs"]];
+  NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"html"];
+	[[webView mainFrame] loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
 
