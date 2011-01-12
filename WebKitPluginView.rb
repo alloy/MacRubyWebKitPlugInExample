@@ -22,7 +22,9 @@ class WebKitPluginView
     # Notify the WebView's UIDelegate, normally you'd have to check if the UIDelegate actually
     # responds to the message, but in this case it is known that the TestBrowser's AppController
     # instance does in fact do so
-    @webView.UIDelegate.webView(@webView, textField: self, didReceiveText: self.stringValue)
+    if @webView.UIDelegate.respond_to?("webView:textField:didReceiveText:")
+      @webView.UIDelegate.webView(@webView, textField: self, didReceiveText: self.stringValue)
+    end
   end
 
   # WebPlugIn informal protocol
