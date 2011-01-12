@@ -30,6 +30,20 @@
 			remoteGlobalIDString = 8D1107320486CEB800E47090 /* WebViewBasedApp.app */;
 			remoteInfo = WebViewBasedApp;
 		};
+		51B7FB7512DE44CC000BA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B7FB5412DE438F000BA203 /* WebViewBasedApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* WebViewBasedApp */;
+			remoteInfo = WebViewBasedApp;
+		};
+		51B7FB7712DE44D0000BA203 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51B7FB2712DE3F3C000BA203 /* Webchen.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090 /* Webchen */;
+			remoteInfo = Webchen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +165,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				51B7FB7612DE44CC000BA203 /* PBXTargetDependency */,
+				51B7FB7812DE44D0000BA203 /* PBXTargetDependency */,
 			);
 			name = WebKitPlugin;
 			productInstallPath = "$(HOME)/Developer/Palettes";
@@ -247,6 +263,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51B7FB7612DE44CC000BA203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WebViewBasedApp;
+			targetProxy = 51B7FB7512DE44CC000BA203 /* PBXContainerItemProxy */;
+		};
+		51B7FB7812DE44D0000BA203 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Webchen;
+			targetProxy = 51B7FB7712DE44D0000BA203 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8D1AC97F0486D23B00FE50C9 /* InfoPlist.strings */ = {
