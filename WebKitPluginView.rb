@@ -20,8 +20,8 @@ class WebKitPluginView
     eval sender.stringValue
 
     # Notify the WebView's UIDelegate, normally you'd have to check if the UIDelegate actually
-    # responds to the message, but in this case it is known that the TestBrowser's AppController
-    # instance does in fact do so
+    # responds to the message, but in this case it is known that the WebViewBasedApp's
+    # AppController instance does in fact do so
     if @webView.UIDelegate.respond_to?("webView:textField:didReceiveText:")
       @webView.UIDelegate.webView(@webView, textField: self, didReceiveText: self.stringValue)
     end
